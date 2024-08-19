@@ -1,0 +1,31 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Upload Success</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1 align="center">File uploaded and processed successfully!</h1>-->
+<!--    <form action="{% url 'download_output' %}" method="get" align="center">-->
+<!--        <button type="submit" >Download Output File</button>-->
+<!--    </form>-->
+<!--    <br>-->
+<!--    <img src="{% url 'display_plot' %}" alt="Plot">-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Success</title>
+</head>
+<body>
+    <h1 align="center">File uploaded and processed successfully!</h1>
+    <!-- Button to download the output file -->
+    <form align="center" action="{% url 'download_output' %}" method="get">
+        <button type="submit">Download Output File</button>
+    </form>
+    <br>
+    <!-- Display the plot image -->
+    <img src="{% url 'display_plot' %}" alt="Plot">
+</body>
+</html>
