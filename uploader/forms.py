@@ -9,5 +9,6 @@ from django import forms
 from .models import ProcessedData
 
 class UploadFileForm(forms.Form):
-    file = forms.FileField()
+    file1 = forms.FileField(label='First File')
+    file2 = forms.FileField(label='Second File')
 
